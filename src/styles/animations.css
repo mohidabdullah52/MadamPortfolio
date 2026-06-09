@@ -3,6 +3,13 @@
   50% { transform: translateY(-10px); }
 }
 
+/* Float variant for absolutely-positioned elements that use translateY(-50%) for centering */
+@keyframes floatChar {
+  0%, 100% { transform: translateY(-50%); }
+  50% { transform: translateY(calc(-50% - 10px)); }
+}
+
+
 @keyframes sparkle {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.5; transform: scale(1.2); }

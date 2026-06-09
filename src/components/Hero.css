@@ -94,9 +94,10 @@
 .hero__right {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 450px;
+  height: 460px;
+  overflow: visible;
 }
 
 .hero__bg-circle {
@@ -108,12 +109,16 @@
   opacity: 0.4;
   z-index: 1;
   filter: blur(20px);
+  left: 0;
 }
 
 .hero__browser-mockup {
   position: absolute;
-  width: 340px;
-  height: 240px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 230px;
   background: var(--color-browser-bg);
   border: 1px solid var(--color-border);
   border-radius: 12px;
@@ -179,11 +184,25 @@
 
 .hero__character-img {
   position: absolute;
-  max-width: 300px;
-  max-height: 380px;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 320px;
+  max-height: 400px;
+  width: 320px;
   z-index: 3;
-  animation: float 4s ease-in-out infinite;
+  animation: floatChar 4s ease-in-out infinite;
   object-fit: contain;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  /* Blend dark background away in dark theme */
+  mix-blend-mode: normal;
+}
+
+/* Dark theme: use screen blend mode to dissolve the black PNG background */
+[data-theme="dark"] .hero__character-img {
+  mix-blend-mode: screen;
 }
 
 /* SPARKLES */
@@ -261,6 +280,17 @@
   .hero__title {
     font-size: 3.2rem;
   }
+
+  .hero__browser-mockup {
+    width: 260px;
+    height: 210px;
+  }
+
+  .hero__character-img {
+    max-width: 280px;
+    width: 280px;
+    right: -10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -293,6 +323,23 @@
 
   .hero__right {
     height: 380px;
+    justify-content: center;
+  }
+
+  .hero__browser-mockup {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 280px;
+    height: 200px;
+  }
+
+  .hero__character-img {
+    right: auto;
+    left: 50%;
+    transform: translateX(-30%) translateY(-50%);
+    animation: none;
+    width: 260px;
+    max-width: 260px;
   }
 
   .hero__services-bar {
@@ -335,12 +382,18 @@
   }
 
   .hero__browser-mockup {
-    width: 280px;
-    height: 200px;
+    width: 240px;
+    height: 180px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
 
   .hero__character-img {
     max-width: 240px;
+    width: 240px;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .service-item {
