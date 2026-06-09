@@ -9,6 +9,13 @@
   50% { transform: translateY(calc(-50% - 10px)); }
 }
 
+/* Float variant for elements centered with translate(-28%, -46%) */
+@keyframes floatCharCenter {
+  0%, 100% { transform: translate(-28%, -46%); }
+  50% { transform: translate(-28%, calc(-46% - 10px)); }
+}
+
+
 
 @keyframes sparkle {
   0%, 100% { opacity: 1; transform: scale(1); }

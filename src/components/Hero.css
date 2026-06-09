@@ -94,7 +94,7 @@
 .hero__right {
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 460px;
   overflow: visible;
@@ -102,27 +102,29 @@
 
 .hero__bg-circle {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 360px;
+  height: 360px;
   border-radius: 50%;
   background: radial-gradient(circle, var(--color-primary-light) 0%, transparent 70%);
-  opacity: 0.4;
+  opacity: 0.5;
   z-index: 1;
-  filter: blur(20px);
-  left: 0;
+  filter: blur(24px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero__browser-mockup {
   position: absolute;
-  left: 0;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   width: 300px;
   height: 230px;
   background: var(--color-browser-bg);
   border: 1px solid var(--color-border);
-  border-radius: 12px;
-  box-shadow: var(--shadow-card);
+  border-radius: 14px;
+  box-shadow: var(--shadow-card-hover);
   z-index: 2;
   overflow: hidden;
   transition: all var(--theme-transition);
@@ -184,25 +186,18 @@
 
 .hero__character-img {
   position: absolute;
-  right: -20px;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
-  max-width: 320px;
-  max-height: 400px;
-  width: 320px;
+  transform: translate(-28%, -46%);
+  max-width: 340px;
+  max-height: 420px;
+  width: 340px;
   z-index: 3;
-  animation: floatChar 4s ease-in-out infinite;
+  animation: floatCharCenter 4s ease-in-out infinite;
   object-fit: contain;
   background: transparent;
   border: none;
   box-shadow: none;
-  /* Blend dark background away in dark theme */
-  mix-blend-mode: normal;
-}
-
-/* Dark theme: use screen blend mode to dissolve the black PNG background */
-[data-theme="dark"] .hero__character-img {
-  mix-blend-mode: screen;
 }
 
 /* SPARKLES */
@@ -282,14 +277,13 @@
   }
 
   .hero__browser-mockup {
-    width: 260px;
+    width: 270px;
     height: 210px;
   }
 
   .hero__character-img {
-    max-width: 280px;
-    width: 280px;
-    right: -10px;
+    max-width: 300px;
+    width: 300px;
   }
 }
 
@@ -327,17 +321,12 @@
   }
 
   .hero__browser-mockup {
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 280px;
-    height: 200px;
+    width: 270px;
+    height: 195px;
   }
 
   .hero__character-img {
-    right: auto;
-    left: 50%;
-    transform: translateX(-30%) translateY(-50%);
-    animation: none;
+    animation: floatCharCenter 4s ease-in-out infinite;
     width: 260px;
     max-width: 260px;
   }
