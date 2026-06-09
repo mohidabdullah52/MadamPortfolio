@@ -1,0 +1,117 @@
+:root {
+  /* === HELLO KITTY THEME (LIGHT) === */
+  
+  /* Primary palette */
+  --color-primary: #F472B6;          /* Pink */
+  --color-primary-hover: #EC4899;    /* Deeper pink */
+  --color-primary-light: #FBCFE8;   /* Light pink */
+  --color-primary-ultra-light: #FDF2F8; /* Very light pink */
+  
+  /* Backgrounds */
+  --color-bg-main: #FFF5F7;          /* Warm white-pink */
+  --color-bg-secondary: #FFFFFF;     /* Pure white */
+  --color-bg-card: #FFFFFF;
+  --color-bg-card-hover: #FFF0F5;
+  --color-bg-navbar: rgba(255, 255, 255, 0.85);
+  --color-bg-hero-gradient: radial-gradient(ellipse at 70% 50%, #FDE8EF 0%, #FFF5F7 70%);
+  --color-bg-services-bar: #FFFFFF;
+  
+  /* Text */
+  --color-text-primary: #1A1A2E;     /* Near black */
+  --color-text-secondary: #6B7280;   /* Gray */
+  --color-text-accent: #F472B6;      /* Pink accent */
+  --color-text-heading: #111827;
+  --color-text-on-primary: #FFFFFF;
+  
+  /* Borders & shadows */
+  --color-border: #F3E8EF;
+  --color-border-card: #FCE4EC;
+  --shadow-card: 0 4px 20px rgba(244, 114, 182, 0.08);
+  --shadow-card-hover: 0 8px 30px rgba(244, 114, 182, 0.15);
+  --shadow-navbar: 0 2px 20px rgba(244, 114, 182, 0.08);
+  
+  /* Button */
+  --color-btn-primary-bg: #F472B6;
+  --color-btn-primary-text: #FFFFFF;
+  --color-btn-outline-border: #F472B6;
+  --color-btn-outline-text: #F472B6;
+  
+  /* Browser window mockup (behind character) */
+  --color-browser-bg: #FFFFFF;
+  --color-browser-bar: #F9FAFB;
+  --color-browser-dot-1: #FCA5A5;
+  --color-browser-dot-2: #FDE68A;
+  --color-browser-dot-3: #86EFAC;
+  --color-browser-code: #F9A8D4;
+  
+  /* Decorative */
+  --color-sparkle: #F9A8D4;
+  --color-services-icon: #F472B6;
+  
+  /* Transitions */
+  --theme-transition: 0.4s ease;
+  
+  /* Typography */
+  --font-heading: 'Fredoka', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+[data-theme="dark"] {
+  /* === KUROMI THEME (DARK) === */
+  
+  /* Primary palette */
+  --color-primary: #A78BFA;          /* Purple */
+  --color-primary-hover: #8B5CF6;    /* Deeper purple */
+  --color-primary-light: #2E1065;    /* Dark purple */
+  --color-primary-ultra-light: #1E1033;
+  
+  /* Backgrounds */
+  --color-bg-main: #0B0712;          /* Deep dark */
+  --color-bg-secondary: #13102B;     /* Slightly lighter dark */
+  --color-bg-card: #1A1535;
+  --color-bg-card-hover: #231D45;
+  --color-bg-navbar: rgba(11, 7, 18, 0.85);
+  --color-bg-hero-gradient: radial-gradient(ellipse at 70% 50%, #1E1045 0%, #0B0712 70%);
+  --color-bg-services-bar: #13102B;
+  
+  /* Text */
+  --color-text-primary: #E5E7EB;
+  --color-text-secondary: #9CA3AF;
+  --color-text-accent: #A78BFA;
+  --color-text-heading: #F9FAFB;
+  --color-text-on-primary: #FFFFFF;
+  
+  /* Borders & shadows */
+  --color-border: #2D2555;
+  --color-border-card: #352D6B;
+  --shadow-card: 0 4px 20px rgba(139, 92, 246, 0.1);
+  --shadow-card-hover: 0 8px 30px rgba(139, 92, 246, 0.2);
+  --shadow-navbar: 0 2px 20px rgba(139, 92, 246, 0.1);
+  
+  /* Button */
+  --color-btn-primary-bg: #7C3AED;
+  --color-btn-primary-text: #FFFFFF;
+  --color-btn-outline-border: #A78BFA;
+  --color-btn-outline-text: #A78BFA;
+  
+  /* Browser window mockup */
+  --color-browser-bg: #1A1535;
+  --color-browser-bar: #231D45;
+  --color-browser-dot-1: #6B7280;
+  --color-browser-dot-2: #6B7280;
+  --color-browser-dot-3: #6B7280;
+  --color-browser-code: #7C3AED;
+  
+  /* Decorative */
+  --color-sparkle: #A78BFA;
+  --color-services-icon: #A78BFA;
+}
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  transition: background-color var(--theme-transition),
+              color var(--theme-transition);
+}

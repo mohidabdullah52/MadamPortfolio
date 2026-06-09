@@ -1,0 +1,41 @@
+@import './reset.css';
+@import './variables.css';
+@import './animations.css';
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color var(--theme-transition),
+              color var(--theme-transition);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-heading);
+  line-height: 1.2;
+  transition: color var(--theme-transition);
+}
+
+p {
+  color: var(--color-text-secondary);
+  transition: color var(--theme-transition);
+}
+
+section {
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Accent text */
+.text-accent {
+  color: var(--color-text-accent);
+  transition: color var(--theme-transition);
+}
