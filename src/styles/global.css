@@ -39,3 +39,41 @@ section {
   color: var(--color-text-accent);
   transition: color var(--theme-transition);
 }
+
+/* Button styles */
+.btn {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--theme-transition);
+  font-family: var(--font-body);
+  text-decoration: none;
+}
+
+.btn--primary {
+  background: var(--color-btn-primary-bg);
+  color: var(--color-btn-primary-text);
+  border: none;
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-btn-outline-text);
+  border: 2px solid var(--color-btn-outline-border);
+}
+
+.btn--outline:hover {
+  background: var(--color-primary-ultra-light);
+  transform: translateY(-2px);
+}
+
