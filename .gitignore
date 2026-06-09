@@ -1,6 +1,32 @@
-# Existing files in workspace to ignore
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Existing workspace files to ignore
 /ChatGPT Image Jun 10, 2026, 03_08_13 AM.png
 /ChatGPT Image Jun 10, 2026, 03_09_26 AM.png
 /MadamCv (3).pdf
 /model_instructions.md
 /implementation_plan.md
+
