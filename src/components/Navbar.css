@@ -158,7 +158,7 @@
   }
 
   .navbar__mobile-link:hover,
-  .navbar__mobile-link--active {
+  .navbar__mobile-link.navbar__link--active {
     color: var(--color-text-accent);
   }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -13,9 +14,22 @@ import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
+  const appVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.8, ease: "easeOut" }
+    }
+  };
+
   return (
     <ThemeProvider>
-      <div className="app">
+      <motion.div 
+        className="app"
+        variants={appVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <Navbar />
         
         <main>
@@ -45,7 +59,7 @@ function App() {
         <Footer />
         
         <ScrollToTop />
-      </div>
+      </motion.div>
     </ThemeProvider>
   );
 }

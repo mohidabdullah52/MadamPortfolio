@@ -77,3 +77,10 @@ section {
   transform: translateY(-2px);
 }
 
+/* Custom focus outlines for keyboard navigation accessibility */
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+

@@ -10,6 +10,12 @@ export function ThemeProvider({ children }) {
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('portfolio-theme', theme);
+    
+    // Dynamic favicon toggle
+    const favicon = document.getElementById('favicon');
+    if (favicon) {
+      favicon.href = theme === 'light' ? '/favicon-kitty.svg' : '/favicon-kuromi.svg';
+    }
   }, [theme]);
 
   const toggleTheme = () => {
