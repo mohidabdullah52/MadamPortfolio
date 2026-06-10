@@ -59,6 +59,10 @@ export const skillsData = {
     title: "Infrastructure",
     items: ["Docker", "Linux Administration", "CI/CD", "Git", "Prometheus", "Grafana"],
   },
+  sqa: {
+    title: "Software Quality Assurance",
+    items: ["Playwright", "Manual Testing", "API Testing", "Automation Testing", "E2E Testing", "Bug Tracking"],
+  },
 };
 
 export const projectsData = [
