@@ -1,1 +1,15 @@
-/* Boilerplate cleared */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Ensure smooth scroll links and hash anchors align below the fixed navbar */
+section {
+  scroll-margin-top: 80px;
+}

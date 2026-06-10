@@ -10,6 +10,7 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import './App.css';
 
 function App() {
   return (
