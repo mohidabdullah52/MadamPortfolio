@@ -1,0 +1,219 @@
+.contact {
+  background-color: var(--color-bg-main);
+  position: relative;
+  overflow: hidden;
+  transition: background-color var(--theme-transition);
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__title {
+  font-size: 1.8rem;
+  font-family: var(--font-heading);
+  color: var(--color-text-heading);
+  margin-bottom: 12px;
+}
+
+.contact__description {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.contact__details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 35px;
+}
+
+.contact__detail-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact__icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: var(--color-primary-ultra-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--theme-transition);
+}
+
+.contact__detail-item:hover .contact__icon-wrapper {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  transform: scale(1.05);
+}
+
+.contact__detail-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__detail-text .label {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact__detail-text .value {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  transition: color var(--theme-transition);
+}
+
+.contact__detail-text a.value:hover {
+  color: var(--color-primary);
+}
+
+.contact__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-card);
+  transition: all var(--theme-transition);
+}
+
+.social-btn:hover {
+  background: var(--color-primary);
+  color: var(--color-text-on-primary);
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* Form Styles */
+.contact__form-container {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-card);
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: var(--shadow-card);
+  transition: all var(--theme-transition);
+}
+
+@media (max-width: 480px) {
+  .contact__form-container {
+    padding: 24px;
+  }
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-heading);
+}
+
+.contact__input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-bg-main);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  transition: all var(--theme-transition);
+}
+
+.contact__input::placeholder {
+  color: var(--color-text-secondary);
+  opacity: 0.5;
+}
+
+.contact__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-ultra-light);
+  background: var(--color-bg-card);
+}
+
+.contact__textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact__submit-btn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: var(--shadow-card);
+}
+
+.contact__submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.contact__success-msg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  background-color: #DEF7EC;
+  border: 1px solid #BCF0DA;
+  color: #03543F;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+[data-theme="dark"] .contact__success-msg {
+  background-color: #052E16;
+  border-color: #14532D;
+  color: #86EFAC;
+}
