@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
             <h2>Contact Section Placeholder</h2>
           </section>
         </main>
+        
+        <ScrollToTop />
       </div>
     </ThemeProvider>
   );
