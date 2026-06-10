@@ -8,8 +8,26 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   overflow-x: hidden;
+  position: relative;
   transition: background-color var(--theme-transition),
               color var(--theme-transition);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-image: var(--color-bg-pattern);
+  background-repeat: repeat;
+  background-size: var(--color-bg-pattern-size);
+  opacity: var(--color-bg-pattern-opacity);
+  pointer-events: none;
+  transition: background-image var(--theme-transition),
+              opacity var(--theme-transition);
 }
 
 h1, h2, h3, h4, h5, h6 {
