@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import About from './components/About';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -14,11 +15,10 @@ function App() {
           {/* Hero Section */}
           <Hero />
           
+          {/* About Section */}
+          <About />
+          
           {/* Placeholder sections for smooth scroll testing */}
-          <section id="about" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <h2>About Section Placeholder</h2>
-          </section>
-
           <section id="skills" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <h2>Skills Section Placeholder</h2>
           </section>
