@@ -36,7 +36,6 @@
 }
 
 .navbar__logo-icon {
-  animation: float 3s ease-in-out infinite;
   color: var(--color-primary);
 }
 
