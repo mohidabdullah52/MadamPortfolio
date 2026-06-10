@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1.2fr 1.8fr 1fr;
   gap: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 80px !important;
 }
 
 @media (max-width: 900px) {
@@ -26,7 +26,7 @@
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 80px !important;
   }
 }
 
