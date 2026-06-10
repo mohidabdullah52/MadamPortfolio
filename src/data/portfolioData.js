@@ -2,8 +2,8 @@ export const personalInfo = {
   name: "Bushra Noor",
   greeting: "Hello there! 👋",
   greetingDark: "Hi there! 👋",
-  titleHighlight: "Bushra",  // The colored word in "I'm Bushra"
-  titleRest: "Developer.",
+  titleHighlight: "Bushra Noor",  // The colored word in "I'm Bushra"
+  titleRest: "",
   tagline: "I build clean, modern, and meaningful web experiences.",
   logoTextLight: "< Hello, I'm Kitty />",
   logoTextDark: "< Hello, I'm Kuromi />",

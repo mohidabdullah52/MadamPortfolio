@@ -16,16 +16,18 @@ body {
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
   z-index: 9999;
   background-image: var(--color-bg-pattern);
   background-repeat: repeat;
   background-size: var(--color-bg-pattern-size);
   opacity: var(--color-bg-pattern-opacity);
   pointer-events: none;
+  transform: rotate(-30deg);
+  transform-origin: center center;
   transition: background-image var(--theme-transition),
               opacity var(--theme-transition);
 }
