@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Experience from './components/Experience';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -26,9 +27,8 @@ function App() {
           {/* Projects Section */}
           <Projects />
 
-          <section id="experience" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <h2>Experience Section Placeholder</h2>
-          </section>
+          {/* Experience Section */}
+          <Experience />
 
           <section id="contact" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <h2>Contact Section Placeholder</h2>
