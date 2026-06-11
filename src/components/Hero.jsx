@@ -32,8 +32,9 @@ const Hero = () => {
             </motion.p>
             <motion.h1 className="hero__title" variants={itemVariants}>
               I'm <span className="text-accent">{personalInfo.titleHighlight}</span>
-              <br />
-              {personalInfo.titleRest}
+              {personalInfo.titleRest && (
+                <><br />{personalInfo.titleRest}</>
+              )}
             </motion.h1>
             <motion.p className="hero__tagline" variants={itemVariants}>
               {personalInfo.tagline}
