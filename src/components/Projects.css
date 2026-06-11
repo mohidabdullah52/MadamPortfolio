@@ -31,6 +31,12 @@
   height: 100%;
 }
 
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--color-primary);
+}
+
 .project-card__content {
   display: flex;
   flex-direction: column;

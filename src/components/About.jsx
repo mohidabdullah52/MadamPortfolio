@@ -76,7 +76,6 @@ const About = () => {
                   key={index} 
                   className="stat-card" 
                   variants={itemVariants}
-                  whileHover={{ y: -5, boxShadow: 'var(--shadow-card-hover)' }}
                 >
                   <span className="stat-card__value">{stat.value}</span>
                   <span className="stat-card__label">{stat.label}</span>

@@ -56,7 +56,6 @@ const Projects = () => {
                 className="project-card"
                 variants={cardVariants}
                 custom={direction}
-                whileHover={{ y: -8, boxShadow: 'var(--shadow-card-hover)', borderColor: 'var(--color-primary)' }}
               >
                 <div className="project-card__content">
                   <h3 className="project-card__title">{project.title}</h3>

@@ -56,7 +56,6 @@ const Education = () => {
               key={index}
               className="education-card"
               variants={cardVariants}
-              whileHover={{ y: -6, boxShadow: 'var(--shadow-card-hover)', borderColor: 'var(--color-primary)' }}
             >
               <div className="education-card__header">
                 <div className="education-card__icon-wrapper">
@@ -78,7 +77,6 @@ const Education = () => {
                         key={idx}
                         className="education-card__coursework-pill"
                         variants={pillVariants}
-                        whileHover={{ scale: 1.05, background: 'var(--color-primary)', color: 'var(--color-text-on-primary)' }}
                       >
                         {course}
                       </motion.span>

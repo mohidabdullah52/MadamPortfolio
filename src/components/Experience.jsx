@@ -84,7 +84,6 @@ const Experience = () => {
                 {/* Timeline Card */}
                 <motion.div 
                   className="timeline-card"
-                  whileHover={{ y: -5, boxShadow: 'var(--shadow-card-hover)', borderColor: 'var(--color-primary)' }}
                 >
                   <span className="timeline-period">{exp.period}</span>
                   <h3 className="timeline-role">{exp.role}</h3>

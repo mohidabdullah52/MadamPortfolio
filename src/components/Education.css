@@ -24,6 +24,12 @@
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.education-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--color-primary);
+}
+
 .education-card__header {
   display: flex;
   align-items: flex-start;
@@ -112,6 +118,9 @@
 }
 
 .education-card__coursework-pill:hover {
+  transform: scale(1.05);
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
   border-color: var(--color-primary);
 }
 

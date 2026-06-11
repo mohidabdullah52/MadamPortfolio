@@ -54,7 +54,6 @@ const Skills = () => {
               key={key}
               className="skills__card"
               variants={cardVariants}
-              whileHover={{ y: -6, boxShadow: 'var(--shadow-card-hover)', borderColor: 'var(--color-primary)' }}
             >
               <h3 className="skills__card-title">{category.title}</h3>
               <div className="skills__pills">
@@ -63,7 +62,6 @@ const Skills = () => {
                     key={index}
                     className="skills__pill"
                     variants={pillVariants}
-                    whileHover={{ scale: 1.05, background: 'var(--color-primary)', color: 'var(--color-text-on-primary)' }}
                   >
                     {skill}
                   </motion.span>
