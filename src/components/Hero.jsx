@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
 import { personalInfo, services } from '../data/portfolioData';
-import { FiCode, FiMonitor, FiDatabase, FiStar, FiArrowRight } from 'react-icons/fi';
+import { FiCode, FiMonitor, FiDatabase, FiStar, FiArrowRight, FiCpu, FiShield } from 'react-icons/fi';
 import './Hero.css';
 
 const Hero = () => {
@@ -108,6 +108,8 @@ const Hero = () => {
                 {service.icon === 'FiMonitor' && <FiMonitor size={24} />}
                 {service.icon === 'FiDatabase' && <FiDatabase size={24} />}
                 {service.icon === 'FiStar' && <FiStar size={24} />}
+                {service.icon === 'FiCpu' && <FiCpu size={24} />}
+                {service.icon === 'FiShield' && <FiShield size={24} />}
               </div>
               <span className="service-item__label">{service.label}</span>
             </div>
