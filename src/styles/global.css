@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
   position: relative;
   transition: background-color var(--theme-transition),
-              color var(--theme-transition);
+    color var(--theme-transition);
 }
 
 body::before {
@@ -20,7 +20,7 @@ body::before {
   left: -50%;
   width: 200%;
   height: 200%;
-  z-index: 9999;
+  z-index: 1;
   background-image: var(--color-bg-pattern);
   background-repeat: repeat;
   background-size: var(--color-bg-pattern-size);
@@ -29,10 +29,15 @@ body::before {
   transform: rotate(-30deg);
   transform-origin: center center;
   transition: background-image var(--theme-transition),
-              opacity var(--theme-transition);
+    opacity var(--theme-transition);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--color-text-heading);
   line-height: 1.2;
@@ -102,5 +107,3 @@ section {
   outline: 3px solid var(--color-primary);
   outline-offset: 3px;
 }
-
-
