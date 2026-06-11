@@ -1,5 +1,5 @@
 .education {
-  background-color: var(--color-bg-main);
+  background-color: var(--color-bg-secondary);
   position: relative;
   overflow: hidden;
   transition: background-color var(--theme-transition);
