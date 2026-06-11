@@ -1,5 +1,5 @@
 .skills {
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-bg-main);
   position: relative;
   overflow: hidden;
   transition: background-color var(--theme-transition);
