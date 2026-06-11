@@ -63,7 +63,7 @@
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--color-text-secondary);
-  text-align: justify;
+  text-align: left;
 }
 
 .about__stats {
