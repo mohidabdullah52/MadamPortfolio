@@ -6,11 +6,11 @@
 }
 
 .education__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 20px;
+  width: 100%;
 }
 
 .education-card {
@@ -18,7 +18,7 @@
   border: 1px solid var(--color-border-card);
   border-radius: 20px;
   padding: 32px;
-  max-width: 700px;
+  max-width: 100%;
   width: 100%;
   box-shadow: var(--shadow-card);
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
