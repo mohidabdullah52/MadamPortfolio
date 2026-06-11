@@ -24,14 +24,14 @@ export const navLinks = [
 
 export const services = [
   { icon: "FiDatabase", label: "Backend\nEngineering" },
-  { icon: "FiCode",     label: "FastAPI &\nPython" },
-  { icon: "FiCpu",      label: "AI /\nRAG Systems" },
-  { icon: "FiShield",   label: "Scalable\nAPIs" },
+  { icon: "FiCode", label: "FastAPI &\nPython" },
+  { icon: "FiCpu", label: "AI /\nRAG Systems" },
+  { icon: "FiLayout", label: "Frontend\nEngineering" },
 ];
 
 
 export const aboutData = {
-  description: `Dedicated Backend Software Engineer with extensive experience in architecting high-performance, asynchronous RESTful APIs using Python and FastAPI. Proficient in building robust, scalable data layers with SQLAlchemy/MongoDB and integrating AI-driven solutions including production-grade RAG systems and deep learning models.`,
+  description: `Dedicated Software Engineer with extensive experience in architecting high-performance, asynchronous RESTful APIs using Python and FastAPI. Proficient in building robust, scalable data layers with SQLAlchemy/MongoDB and integrating AI-driven solutions including production-grade RAG systems and deep learning models.`,
   stats: [
     { value: "1+", label: "Years Experience" },
     { value: "2+", label: "Projects Completed" },
