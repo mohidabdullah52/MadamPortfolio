@@ -34,9 +34,9 @@ export const services = [
 export const aboutData = {
   description: `Dedicated Software Engineer with extensive experience in architecting high-performance, asynchronous RESTful APIs using Python and FastAPI. Proficient in building robust, scalable data layers with SQLAlchemy/MongoDB and integrating AI-driven solutions including production-grade RAG systems and deep learning models.`,
   stats: [
-    { value: "1+", label: "Years Experience" },
-    { value: "2+", label: "Projects Completed" },
-    { value: "5+", label: "Technologies" },
+    { value: "1+",  label: "Years Experience" },
+    { value: "2+",  label: "Projects Completed" },
+    { value: "30+", label: "Technologies & Tools" },
   ],
 };
 
